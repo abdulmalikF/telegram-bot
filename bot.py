@@ -20,14 +20,15 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif msg == "وداعا":
         await update.message.reply_text("مع السلامة! 👋 الى اللقاء")
     else:
-        await update.message.reply_text("ما فهمت قصدك 😅 كيف حالك؟ جرب تكتب:")
+        await update.message.reply_text("ما فهمت قصدك 😅 جرب تكتب: مرحبا")
 
-def main():
+async def main():
     app = Application.builder().token(TOKEN).build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, echo))
     print("Bot is running!")
-    app.run_polling(allowed_updates=Update.ALL_TYPES)
+    await app.run_polling(allowed_updates=Update.ALL_TYPES)
 
 if __name__ == "__main__":
-    main()
+    import asyncio
+    asyncio.run(main())
