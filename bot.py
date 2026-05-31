@@ -11,9 +11,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     msg = update.message.text
     if msg == "السلام عليكم":
-        await update.message.reply_text("وعليكم السلام ورحمة الله وبركاته ادلوا بدلوك")
-    elif msg == "من انت":
-        await update.message.reply_text("انا بوت ذكي صنعه عبدالملك 😄")
+        await update.message.reply_text("وعليكم السلام")
+    elif msg == "هدف النصر الاول على الهلال":
+        await update.message.reply_text("https://youtu.be/yAAjKGpS4RY?si=hTl0_4cZnDUxYa3-")
     elif msg == "مرحبا":
         await update.message.reply_text("اهلا وسهلا 👋")
     elif msg == "وداعا":
