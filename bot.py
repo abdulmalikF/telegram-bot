@@ -19,7 +19,7 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif msg == "وداعا":
         await update.message.reply_text("مع السلامة! 👋 الى اللقاء")
     else:
-        await update.message.reply_text("ما فهمت قصدك 😅 جرب تكتب: مرحبا")
+        await update.message.reply_text("ما فهمت قصدك")
 
 def main():
     app = Application.builder().token(TOKEN).build()
