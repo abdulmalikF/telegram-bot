@@ -12,8 +12,8 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     msg = update.message.text
     if msg == "السلام عليكم":
         await update.message.reply_text("وعليكم السلام")
-    elif msg == "هدف النصر الاول على الهلال":
-        await update.message.reply_text("https://youtu.be/yAAjKGpS4RY?si=hTl0_4cZnDUxYa3-")
+    elif msg == "كيف حالك":
+        await update.message.reply_text("بخير الحمدلله")
     elif msg == "مرحبا":
         await update.message.reply_text("اهلا وسهلا 👋")
     elif msg == "وداعا":
