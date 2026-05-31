@@ -6,7 +6,7 @@ TOKEN = os.getenv("TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     name = update.message.from_user.first_name
-    await update.message.reply_text(f"مرحبا {name}!")
+    await update.message.reply_text(f"اهلا {name}!")
 
 async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     msg = update.message.text
